@@ -1,3 +1,5 @@
+package unit1_fundamentals;
+
 public class Random {
     public static void main(String[] args) {
         hazelnut();

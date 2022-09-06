@@ -1,3 +1,5 @@
+package unit1_fundamentals;
+
 import java.util.Scanner;
 
 public class UserInput1 {
@@ -9,5 +11,3 @@ public class UserInput1 {
     }
 }
 
-//to run this program instead of the first file, Random, you must right click on this document
-//then select run UserInput1. Then you can click the run button like normal
