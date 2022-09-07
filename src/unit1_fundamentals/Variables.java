@@ -8,6 +8,7 @@ public class Variables {
         shorty();
         dataTypes();
         descriptiveVariableNames();
+        typeCasting();
     }
 
     public static void shorty() {
@@ -33,6 +34,17 @@ public class Variables {
       boolean hasDriversLicense = true;
       String name = "fruit flies";
       System.out.println("There are so many " + name);
+    }
+
+    public static void typeCasting() {
+       int foo = 5;
+       double bar = foo; //java wont convert to an unit because it may lose data, so explicity cast it to an int
+        System.out.println(foo);
+        System.out.println(bar);
+        double fooo = 5.95;
+        double barr = (int)foo; //java wont convert to an unit because it may lose data, so explicity cast it to an int
+        System.out.println(fooo);
+        System.out.println(barr);
     }
 }
 
