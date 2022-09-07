@@ -9,10 +9,8 @@ public class Variables {
     }
 
     public static void shorty() {
-       int x = 15;
-       x =32;
-       x = -1000;
-       System.out.print(x);
+       System.out.println(15 / 2); // if written like this, then the output will not be a decimal
+        System.out.println(15.0 / 2); // write the number as a double, so it does not round
     }
 }
 
