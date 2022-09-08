@@ -22,20 +22,20 @@ public class UserInputs {
 
 
         System.out.println("You've lived " + age + " years. In another " + age + " years, you'll be " + multiplyAge + " years old.");
-
+        characters();
     }
 
     public static void characters() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("What is your name? ");
-        int age = scanner.nextInt();
+        String name = scanner.next();
 
         System.out.println();
-        int multiplyAge = age * 2;
+        int charsInName = name.length();
 
 
-        System.out.println("You've lived " + age + " years. In another " + age + " years, you'll be " + multiplyAge + " years old.");
+        System.out.format("There are %d characters in your name, " + name + ".", charsInName);
 
     }
 }
