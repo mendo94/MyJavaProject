@@ -11,14 +11,19 @@ public class userInput {
     }
 
     public static void scanner() {
-        System.out.println("What is your name?");
         Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What is your name?");
         String userName= scanner.next(); //used to read strings
         System.out.println(userName + " is a fantastic name!");
 
-        System.out.println("How old are you?");
+        System.out.println("\nHow old are you, " + userName + "?");
         int userAge = scanner.nextInt(); //used to read integers
         System.out.println("Your name is " + userName + " and you are " + userAge + " years old.");
+
+        System.out.println("\n How tall are you?");
+        double userHeight = scanner.nextDouble(); //used to read integers
+        System.out.println("You are " + userHeight + " feet tall!");
     }
 }
 
