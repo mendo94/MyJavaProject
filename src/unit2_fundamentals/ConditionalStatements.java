@@ -20,6 +20,7 @@ public class ConditionalStatements {
     stringEquality();
     nestedIfStatements();
     lexicalScope();
+    SwitchStatement();
     }
 
     public static void height () {
@@ -98,5 +99,21 @@ public class ConditionalStatements {
        }
 
        System.out.println("You have " + numPets + " pets.");
+    }
+
+    public static void SwitchStatement () {
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+
+        switch (num) {
+            case 1:
+                System.out.println("You entered 1.");
+                break;
+            case 2:
+                System.out.println("You entered two.");
+            default:
+                System.out.println("Invalid number.");
+        }
+
     }
 }
