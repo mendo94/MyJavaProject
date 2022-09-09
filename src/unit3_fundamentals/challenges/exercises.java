@@ -9,12 +9,10 @@ public class exercises {
 //
 //        Write a program which prints numbers from 89 to 117.
 
-        int i = 88;
+        for (int i = 89; i <= 117; i++) {
+            System.out.println(i);
+        }
 
-        while (i < 117) {
-                i++;
-                System.out.println(i);
-            }
         exercise2();
         exercise3();
         exercise4();
@@ -27,17 +25,20 @@ public class exercises {
 //        Exercise 2
 //
 //        Write a program which prints numbers from 1 to 40. After every third number, print “Quack.”.
-        int i = 1;
+        int count = 1;
 
-        while (i < 40) {
+        for (int i = 1; i <= 40; i++) {
 
-            i++;
-            System.out.print(i);
-            if (i % 3 == 0) {
-                System.out.print("Quack");
+            System.out.println(i);
+
+            if (count == 3) {
+                System.out.println("Quack.");
+                count = 0;
             }
-        }
 
+            count++;
+
+        }
     }
         public static void exercise3() {
 //            Exercise 3
@@ -46,18 +47,14 @@ public class exercises {
 //            Each time the user enters the password incorrectly, prompt them for a
 //            password again. When the user enters the password correctly, print “ACCESS APPROVED”.
             Scanner scanner = new Scanner(System.in);
-            String guess;
+            String input;
 
-            do  {
-                System.out.print("\n Please enter the password: ");
-                guess = scanner.next();
-            } while (!guess.equals("shark59"));
+            do {
+                System.out.print("Enter Password: ");
+                input = scanner.next();
+            } while (!input.equals("shark50"));
 
-            if (guess.equals("shark59")) {
-                System.out.println("ACCESS APPROVED.");
-            } else {
-                System.out.println("That is incorrect, please try again.");
-            }
+            System.out.println("ACCESS APPROVED");
         }
         public static void exercise4() {
 //            Write a program which makes use of a loop to print the following output:
@@ -67,7 +64,7 @@ public class exercises {
             for (int i = 0; i < 11; i++) {
                 System.out.print(i + ",");
             }
-
+            System.out.println("\b\b.");
         }
     public static void exercise5() {
 //        Exercise 5
@@ -119,13 +116,13 @@ public class exercises {
 
             System.out.print("\nGuess: ");
             guess = scanner.nextInt();
+            guessTracker++;
 
             if (guess < randomNumber) {
                 System.out.println("HIGHER." );
-                guessTracker++;
+
             } else if (guess > randomNumber) {
                 System.out.println("LOWER.");
-                guessTracker++;
             } else {
                 System.out.println("CORRECT. My number was " + randomNumber + "and it took you " + guessTracker + " guesses!");
             }
