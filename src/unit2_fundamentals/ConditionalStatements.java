@@ -16,12 +16,26 @@ public class ConditionalStatements {
         System.out.print(7);
         System.out.print(8);
         System.out.print(9);
-
+    height();
     }
 
     public static void height () {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to Cedar Point");
+        System.out.print("Please enter your height in centimeters: ");
+        int height = scanner.nextInt();
+
+        if (height < 130) {
+            System.out.println("You do not meet the height requirements, your height is too short.");
+
+        } else if (height > 210) {
+
+            System.out.println("Your height is taller than the requirements, you cannot ride.");
+
+        } else {
+            System.out.println("You pass the height requirements.");
+
+        }
     }
 }
