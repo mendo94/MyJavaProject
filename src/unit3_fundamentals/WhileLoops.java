@@ -15,9 +15,10 @@ public class WhileLoops {
         }
 
 
-    forloop();
+        forloop();
         breakStatement();
        doWhileLoop();
+       modulo();
     }
 
     public static void forloop() {
@@ -48,5 +49,10 @@ public class WhileLoops {
             again = scanner.next();
         } while (again.equals("y"));
 
+    }
+
+    public static void modulo() {
+//        check if a number divides evenly by equal it to zero.
+        System.out.println( 15 % 4 == 0);
     }
 }
