@@ -1,6 +1,5 @@
 package unit3_fundamentals.challenges;
 
-import java.util.Objects;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -20,6 +19,8 @@ public class exercises {
         exercise3();
         exercise4();
         exercise5();
+        exercise6();
+
 
     }
     public static void exercise2() {
@@ -83,7 +84,7 @@ public class exercises {
         int randomNumber = ThreadLocalRandom.current().nextInt(1, 101);
         int guess;
 
-        System.out.println("--- Guess My Number Game ---");
+        System.out.println("\n--- Guess My Number Game ---");
 
         do {
 
@@ -96,6 +97,37 @@ public class exercises {
                 System.out.println("LOWER.");
             } else {
                 System.out.println("CORRECT. My number was " + randomNumber + ".");
+            }
+
+        } while (guess != randomNumber);
+    }
+
+    public static void exercise6() {
+//        Exercise 6
+//
+//        Modify the program in Exercise 5 so that once the game is won,
+//                it informs the player how many guesses it took them.
+        Scanner scanner = new Scanner(System.in);
+
+        int randomNumber = ThreadLocalRandom.current().nextInt(1, 101);
+        int guess;
+        int guessTracker = 0;
+
+        System.out.println("\n--- Guess My Number Game ---");
+
+        do {
+
+            System.out.print("\nGuess: ");
+            guess = scanner.nextInt();
+
+            if (guess < randomNumber) {
+                System.out.println("HIGHER." );
+                guessTracker++;
+            } else if (guess > randomNumber) {
+                System.out.println("LOWER.");
+                guessTracker++;
+            } else {
+                System.out.println("CORRECT. My number was " + randomNumber + "and it took you " + guessTracker + " guesses!");
             }
 
         } while (guess != randomNumber);
