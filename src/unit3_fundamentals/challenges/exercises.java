@@ -16,6 +16,9 @@ public class exercises {
             }
         exercise2();
         exercise3();
+        exercise4();
+        exercise5();
+
     }
     public static void exercise2() {
 //        Exercise 2
@@ -45,12 +48,35 @@ public class exercises {
             do  {
                 System.out.print("\n Please enter the password: ");
                 guess = scanner.next();
-                System.out.println("That is incorrect, please try again.");
             } while (!guess.equals("shark59"));
 
             if (guess.equals("shark59")) {
                 System.out.println("ACCESS APPROVED.");
+            } else {
+                System.out.println("That is incorrect, please try again.");
             }
+        }
+        public static void exercise4() {
+//            Write a program which makes use of a loop to print the following output:
+//
+//            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+            for (int i = 0; i < 11; i++) {
+                System.out.print(i + ",");
+            }
+
+        }
+    public static void exercise5() {
+//        Exercise 5
+//
+//        Create a game where the program picks a random number from 1 to 100 and
+//        the player has to guess it. Each time the player makes a guess, print “HIGHER”
+//        if the guess was too low or “LOWER” if the guess was too high. If the player
+//        correctly guesses the number, print “CORRECT”, then end the game.
+//
+//        You can use the line of code below which produces a random number from 1 to 100,
+//            and stores it in randomNumber.
+
 
         }
 
