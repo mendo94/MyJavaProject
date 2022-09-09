@@ -18,6 +18,7 @@ public class ConditionalStatements {
         System.out.print(9);
     height();
     stringEquality();
+    nestedIfStatements();
     }
 
     public static void height () {
@@ -64,4 +65,25 @@ public class ConditionalStatements {
         }
     }
 
+    public static void nestedIfStatements () {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("VIP Lounge");
+
+        System.out.print("Age: ");
+        int age = scanner.nextInt();
+
+        if (age >= 18) {
+            System.out.print("Do you have a VIP pass: (yes/no): ");
+            String vipPass = scanner.next();
+
+            if (vipPass.equals("yes")) {
+                System.out.println("Thanks, go on in.");
+            } else {
+                System.out.println("Sorry you must have a pass to enter.");
+            }
+        } else {
+            System.out.println("Sorry you must be over 18 years old.");
+        }
     }
+}
