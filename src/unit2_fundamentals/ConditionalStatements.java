@@ -29,9 +29,15 @@ public class ConditionalStatements {
         if (height < 130) {
             System.out.println("You do not meet the height requirements, your height is too short.");
 
+        } else if (height < 130 || height > 120) {
+            System.out.println("All aboard.");
+
         } else if (height > 210) {
 
             System.out.println("Your height is taller than the requirements, you cannot ride.");
+
+        } else if (height == 210) {
+            System.out.println("Further approval is needed for you to ride this ride, please see an attendant");
 
         } else {
             System.out.println("You pass the height requirements.");
