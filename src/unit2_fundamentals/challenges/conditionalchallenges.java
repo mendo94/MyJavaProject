@@ -35,13 +35,12 @@ public class conditionalchallenges {
         int y = 20;
 
         if (x > y) {
-            int difference = x - y;
-            System.out.format("x is bigger than y by %d digits.", difference);
-        } else if (x == y) {
-            System.out.println("x and y are the same");
+
+            System.out.format("x is bigger than y by " + (x - y));
+        } else if (x < y) {
+            System.out.println("x is smaller than y by " + (y - x));
         } else {
-            int difference = y - x;
-            System.out.format("x is smaller than y by %d digits.", difference);
+            System.out.format("x and y are the same.");
         }
 
     }
@@ -82,20 +81,21 @@ public class conditionalchallenges {
         int randomNumber = ThreadLocalRandom.current().nextInt(1, 6);
 
         System.out.print("\n Please pick a number between 1 through 5: ");
-        int userChoice = scanner.nextInt();
+        int guess = scanner.nextInt();
 
-        if (userChoice != randomNumber) {
-            System.out.print("\n Your guess is incorrect, I will give you one more chance to guess again. Guess correctly now: ");
-            int secondUserChoice = scanner.nextInt();
-            if (secondUserChoice != randomNumber) {
-                System.out.format("\n I gave you a second chance and you failed, the correct answer was %d", randomNumber);
-
-            } else {
-                System.out.println("Now you got it!");
-            }
-        } else {
-            System.out.format("\n Correct! Aren't you lucky..");
+        if (guess == randomNumber) {
+            System.out.println("Correct! Aren't you lucky.");
         }
+        else {
+            System.out.println("Wrong! Have another go.");
+            System.out.print("Your guess: ");
+            guess = scanner.nextInt();
 
+            if (guess == randomNumber) {
+                System.out.println("Correct! About time.");
+            } else {
+                System.out.println("Wrong again! Maybe next time.");
+            }
+        }
     }
 }
