@@ -17,6 +17,7 @@ public class ConditionalStatements {
         System.out.print(8);
         System.out.print(9);
     height();
+    stringEquality();
     }
 
     public static void height () {
@@ -44,4 +45,23 @@ public class ConditionalStatements {
 
         }
     }
-}
+
+    public static void stringEquality () {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("VIP Lounge");
+
+        System.out.print("Age: ");
+        int age = scanner.nextInt();
+
+        System.out.print("Do you have a VIP pass: (yes/no): ");
+        String vipPass = scanner.next();
+
+        if (age >= 18 && vipPass.equals("yes") || age >= 70) {
+            System.out.println("Thanks, go on in.");
+        } else {
+            System.out.println("Call the cops.");
+        }
+    }
+
+    }
