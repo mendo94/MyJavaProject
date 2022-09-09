@@ -23,6 +23,7 @@ public class conditionalchallenges {
         }
         exercise2();
         exercise3();
+        exercise4();
     }
 
     public static void exercise2() {
@@ -68,6 +69,32 @@ public class conditionalchallenges {
             System.out.println("Correct! Aren't you lucky..");
         } else {
             System.out.format("\n Hard luck! Maybe next time. The correct answer was %d", randomNumber);
+        }
+
+    }
+
+    public static void exercise4() {
+//        Exercise 4
+//
+//        Modify the program from Exercise 3 so it gives the player two chances
+//        to guess the number.
+        Scanner scanner = new Scanner(System.in);
+        int randomNumber = ThreadLocalRandom.current().nextInt(1, 6);
+
+        System.out.print("\n Please pick a number between 1 through 5: ");
+        int userChoice = scanner.nextInt();
+
+        if (userChoice != randomNumber) {
+            System.out.print("\n Your guess is incorrect, I will give you one more chance to guess again. Guess correctly now: ");
+            int secondUserChoice = scanner.nextInt();
+            if (secondUserChoice != randomNumber) {
+                System.out.format("\n I gave you a second chance and you failed, the correct answer was %d", randomNumber);
+
+            } else {
+                System.out.println("Now you got it!");
+            }
+        } else {
+            System.out.format("\n Correct! Aren't you lucky..");
         }
 
     }
