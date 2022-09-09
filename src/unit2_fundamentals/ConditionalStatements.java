@@ -19,6 +19,7 @@ public class ConditionalStatements {
     height();
     stringEquality();
     nestedIfStatements();
+    lexicalScope();
     }
 
     public static void height () {
@@ -85,5 +86,17 @@ public class ConditionalStatements {
         } else {
             System.out.println("Sorry you must be over 18 years old.");
         }
+    }
+
+    public static void lexicalScope () {
+        int numPets = 0;
+
+       if (true) {
+           Scanner scanner = new Scanner(System.in);
+           System.out.println("Enter number of pets you own: ");
+           numPets = scanner.nextInt();
+       }
+
+       System.out.println("You have " + numPets + " pets.");
     }
 }
