@@ -1,5 +1,7 @@
 package unit3_fundamentals;
 
+import java.util.Scanner;
+
 public class Arrays {
     public static void main(String[] args) {
         //iterate through an array
@@ -16,6 +18,7 @@ public class Arrays {
             System.out.println(a[i]);
         }
         processingArrays();
+        sizesTypesFortunes();
 
     }
 
@@ -35,5 +38,23 @@ public class Arrays {
             System.out.println("Number of values greater than 100 are " + count);
        double mean = (double)sumOfNums / nums.length;
         System.out.println("The mean is" + mean);
+    }
+
+    public static void sizesTypesFortunes() {
+        Scanner scanner = new Scanner(System.in);
+        //changing the size of the an array
+        double[] foo = {1,8,56.556,56.75,8,5.67,456756,987};
+        double[] bar = new double[100]; //write the size of an array here
+
+        String[] predictions = new String[3];
+        predictions[0] = "a pioneer";
+        predictions[1] = "loved by many";
+        predictions[2] = "going straight to hell";
+
+        System.out.print("I will predict your future, Choose 1, 2, or 3: ");
+        int choice = scanner.nextInt();
+
+        System.out.println("In your future you will be " + predictions[choice -1]);
+
     }
 }
