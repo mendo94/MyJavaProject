@@ -1,5 +1,7 @@
 package unit3_fundamentals.challenges;
 
+import java.util.Scanner;
+
 public class arrays {
     public static void main(String[] args) {
 //        Exercise 1
@@ -35,6 +37,35 @@ public class arrays {
         }
         double mean = (double)sumOfElements / doubles.length;
         System.out.println("the average is: " + mean);
+        favoriteFoods();
+
+    }
+
+    public static void favoriteFoods() {
+//        Exercise 4
+//
+//        Write a program which asks the user to enter their top five favourite foods and store
+//        their answers in a string array. However, create the array so it can only hold a maximum of three
+//        strings. After the user enters the third
+//        item, print “No more memory available.”, then print out the contents of the array.
+
+        Scanner scanner = new Scanner(System.in);
+
+        String[] favoriteFood = new String[3];
+
+        for (int i = 0; i < favoriteFood.length; i++) {
+            System.out.print("Enter your favorite foods: ");
+            favoriteFood[i] = scanner.nextLine();
+        }
+
+        System.out.println("No more memory available.");
+
+        for (int i = 0; i < favoriteFood.length; i++) {
+            System.out.println(favoriteFood[i]);
+        }
+
+
+
 
     }
 }
