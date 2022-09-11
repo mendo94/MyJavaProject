@@ -20,6 +20,7 @@ public class Arrays {
         processingArrays();
         sizesTypesFortunes();
         raceCars();
+        forEachLoop();
 
     }
 
@@ -79,6 +80,15 @@ public class Arrays {
             }
         }
             System.out.println("Fastest time: " + fastestTime);
+
+    }
+
+    public static void forEachLoop() {
+        double[] da = new double[] {25.93, 1.43, 45.66, 655, -655.54, -65, 76.77};
+
+        for (double e : da) {
+            System.out.println(e);
+        }
 
     }
 }
