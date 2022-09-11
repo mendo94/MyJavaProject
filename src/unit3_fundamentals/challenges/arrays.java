@@ -12,5 +12,13 @@ public class arrays {
             System.out.println(foo[i]);
         }
 
+//        Exercise 2
+//
+//        Use a loop to populate an array with integers from 1 to 20.
+//        Use another loop to print the contents of the array (the elements) backwards.
+        for (int i = foo.length - 1; i >= 0; i--) {
+            System.out.print(foo[i]);
+        }
+
     }
 }
