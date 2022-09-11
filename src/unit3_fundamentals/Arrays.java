@@ -19,6 +19,7 @@ public class Arrays {
         }
         processingArrays();
         sizesTypesFortunes();
+        raceCars();
 
     }
 
@@ -55,6 +56,29 @@ public class Arrays {
         int choice = scanner.nextInt();
 
         System.out.println("In your future you will be " + predictions[choice -1]);
+
+    }
+
+    public static void raceCars() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Number of laps: ");
+        int numberOfLaps = scanner.nextInt();
+
+        double[] lapTimes = new double[numberOfLaps];
+
+        for (int i = 0; i < numberOfLaps; i++) {
+            System.out.println("Lap time: ");
+            lapTimes[i] = scanner.nextDouble();
+        }
+
+        double fastestTime = lapTimes[0];
+        for (int i = 1; i < lapTimes.length; i++) {
+            if (lapTimes[i] < fastestTime) {
+                fastestTime = lapTimes[i];
+            }
+        }
+            System.out.println("Fastest time: " + fastestTime);
 
     }
 }
