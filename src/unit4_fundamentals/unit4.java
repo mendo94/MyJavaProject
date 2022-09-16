@@ -7,7 +7,7 @@ public class unit4 {
         var = 5;
 
     }
-    public static void foo() {
+    public static void foo(int a) {
         System.out.println(16);
     }
         }
