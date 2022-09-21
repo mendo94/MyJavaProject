@@ -4,7 +4,7 @@ public class unit4 {
     public static void main(String[] args) {
         int var;
         var = 5;
-        foo(var, 57.4, " chocolates");
+        foo(var, 57.4, " for groceries");
 
 
     }
