@@ -8,7 +8,6 @@ public class unit4 {
 
 
     }
-    //not coplete
     public static void foo(int a, double b, String c) {
 
         System.out.println(a + b + c);
