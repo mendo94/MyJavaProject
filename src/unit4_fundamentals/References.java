@@ -9,8 +9,8 @@ public class References {
         int[] y = (x);
         x[3] = 9;
 
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("a === " + a);
+        System.out.println("b == " + b);
 
         System.out.println();
 
