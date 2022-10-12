@@ -3,9 +3,11 @@ package PrimeNumbers;
 public class PrimeNumbers {
     public static void main(String[] args) {
 
-        for (int div = 2; div < 49; div++) {
+        int num = 89;
 
-          if  (49 % div ==0) {
+        for (int div = 2; div < num; div++) {
+
+          if  (num % div ==0) {
                 System.out.println("Not prime");
                 break;
 
