@@ -3,22 +3,23 @@ package PrimeNumbers;
 public class PrimeNumbers {
     public static void main(String[] args) {
 
-        int num = 1;
+
+
+        for (int num = 2; num < 1000; num++) {
         boolean isPrime = true;
 
-        for (int div = 2; div < num; div++) {
+            for (int div = 2; div < num; div++) {
 
-          if  (num % div ==0) {
+                if (num % div == 0) {
 
-                isPrime = false;
-                break;
+                    isPrime = false;
+                    break;
 
+                }
             }
-        }
-        if (isPrime) {
-            System.out.println("Is prime");
-        } else {
-            System.out.println("Not prime");
+            if (isPrime) {
+                System.out.println(num + "are all prime numbers");
+            }
         }
     }
 }
