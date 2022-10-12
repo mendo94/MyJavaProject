@@ -10,6 +10,7 @@ public class TicTacToe {
         Scanner scanner = new Scanner(System.in);
         int input;
         char turn = 'X';
+        int currentTurn = 1;
 
 
         while (true) {
