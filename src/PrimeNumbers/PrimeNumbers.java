@@ -3,7 +3,8 @@ package PrimeNumbers;
 public class PrimeNumbers {
     public static void main(String[] args) {
 
-        int num = 89;
+        int num = 9;
+        boolean isPrime;
 
         for (int div = 2; div < num; div++) {
 
