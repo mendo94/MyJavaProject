@@ -18,7 +18,7 @@ public class PrimeNumbers {
                 }
             }
             if (isPrime) {
-                System.out.println(num + "are all prime numbers");
+                System.out.println(num + " is a prime number.");
             }
         }
     }
