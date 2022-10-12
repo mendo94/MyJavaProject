@@ -38,6 +38,7 @@ public class TicTacToe {
                     || pos[8] == turn && pos[4] == turn && pos[0] == turn
             ) {
                 System.out.println(turn + " is the WINNNNNNNEERRR!!!!!!!! :D ");
+                break;
             }
 
             if (turn == 'X') {
