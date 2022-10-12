@@ -13,8 +13,11 @@ public class TicTacToe {
 
 
         while (true) {
+            do {
+
             System.out.print("Enter a position: ");
             input = scanner.nextInt();
+            } while (pos[input -1] == 'X' || pos[input -1] =='O');
 
             pos[input - 1] = turn;
 
