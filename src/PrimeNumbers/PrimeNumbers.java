@@ -7,6 +7,7 @@ public class PrimeNumbers {
 
           if  (49 % div ==0) {
                 System.out.println("Not prime");
+                break;
 
             }
         }
