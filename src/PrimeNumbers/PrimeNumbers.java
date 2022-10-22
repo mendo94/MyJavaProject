@@ -32,6 +32,8 @@ public class PrimeNumbers {
      *
      * Block scope refers to variables declared inside blocks of code are only assessible by the code between the curly braces whcih follows the line in which the variables were declased
      *
+     * Java recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve
+     *
      * */
 
 }
