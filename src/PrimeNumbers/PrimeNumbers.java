@@ -3,7 +3,7 @@ package PrimeNumbers;
 public class PrimeNumbers {
     public static void main(String[] args) {
 
-        int x = 100;
+
 
 
 
@@ -29,6 +29,8 @@ public class PrimeNumbers {
      * Method overloading is when multiple methods can have the same name with different parameters
      *
      * Method Scope variables are only assessible inside the region they are created is java scope. Method scope variables declared directly inside a method are avaiable anywhere in the method following the line of code in which they were declared.
+     *
+     * Block scope refers to variables declared inside blocks of code are only assessible by the code between the curly braces whcih follows the line in which the variables were declased
      *
      * */
 
