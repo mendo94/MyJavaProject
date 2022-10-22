@@ -22,4 +22,13 @@ public class PrimeNumbers {
             }
         }
     }
+    /*
+     * Method overloading is when multiple methods can have the same name with different parameters
+     *
+     * */
+
 }
+
+
+
+
